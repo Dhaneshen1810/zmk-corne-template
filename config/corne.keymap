@@ -28,15 +28,15 @@
                 };
                 lower_layer {
 // -----------------------------------------------------------------------------------------
-// |  ESC |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
-// | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
-// | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
+// |  ESC |     |     |  UP |     |     |   |     |  7  |  8  |  9  |     | BKSP |
+// | BTCLR|     | LFT | DWN | RGT |     |   | LFT |  4  |  5  |  6  |  +  |   -  |
+// | SHFT | BT1 | BT2 | BT3 | BT4 | BT5 |   |  0  |  1  |  2  |  3  |  *  |   /  |
 //                    | GUI |     | ENT |   | ENT |     | ALT |
                         display-name = "Lower";
                         bindings = <
-   &kp ESC    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp DEL
-   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT &kp LEFT &kp UP &kp RIGHT &trans &trans
-   &kp LSHFT  &trans       &trans       &trans       &trans       &trans         &trans   &trans   &kp DOWN &trans    &trans &trans
+   &kp ESC    &trans &trans  &kp UP  &trans  &trans         &trans   &kp N7   &kp N8 &kp N9    &trans &kp DEL
+   &bt BT_CLR &trans &kp LEFT &DOWN &RIGHT &trans    &kp LEFT &kp N4 &kp N5 &kp N6 &kp PLUS &kp MINUS
+   &kp LSHFT  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4         &kp N0   &kp N1   &kp N2 &kp N3    &kp KP_MULTIPLY &kp FSLH
                           	        &kp LGUI     &trans       &kp RET      &kp RET  &trans   &kp RALT
                         >;
                 };
